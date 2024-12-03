@@ -1,11 +1,13 @@
 import { Router } from "express";
-import userRoutes from "./userRoutes.js"
+import juegosRoutes from "./juegosRoutes.js";
+import ventasRoutes from "./ventasRoutes.js";
 
 
 const routes = Router();
 
 
-routes.use("/users", userRoutes);
+routes.use("/juegos", juegosRoutes);
+routes.use("/ventas", ventasRoutes);
 
 
 export default routes;
