@@ -68,8 +68,8 @@ class VentasService {
     totalUnidadesPorCategoria = () => {
         try {
 
-            const ventas = VentasModel.getAllVentas();
-            const juegos = JuegosModel.getAllJuegos();
+            const ventas = Venta.getAllVentas();
+            const juegos = Juego.getAllJuegos();
 
            
             const ventasPorCategoria = {};
